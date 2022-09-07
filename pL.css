@@ -1,0 +1,97 @@
+
+
+.pL {
+    background-color: white;
+    color: black;
+}
+
+section {
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100vw; 
+}
+
+section h1 {
+    margin: 0;
+    padding: 1% 2% 1% 2%;
+    background-color: gainsboro;
+}
+
+section .liste {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: large;
+}
+
+
+.liste ul {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.beschreibung-div {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90vw;
+    border-bottom: 1px solid black;
+}
+
+.liste li {
+    box-sizing: border-box;
+    /*WIDTH AUTO PLUS MARGIN TAKTIK*/
+    width: auto;
+    list-style-type:none;
+    font-size: larger;
+}
+
+.beschreibung {
+    box-sizing: border-box;
+    display: flex;
+    width: 100vw;
+    margin-bottom: 2.5%;
+    margin-top: 2.5%;
+    padding: 0;
+}
+
+.preis {
+    color: grey;
+    font-weight:300;
+}
+
+sup {
+    color: grey;
+}
+
+.kleingeschriebene {
+    color: grey;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+@media only screen and (max-width: 950px) {
+    nav {
+        flex-direction: column;
+        position: static;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    .liste li, .kleingeschriebene {
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .beschreibung-div {
+        flex-direction: column;
+    }
+}

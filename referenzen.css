@@ -1,0 +1,141 @@
+html {
+    background-color: white;
+    color: black;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* This Made the Border Dissapear!!! WoW*/
+    margin: 0 auto;
+}
+
+nav {
+    background-color:black;
+    color: white;
+    display: flex; 
+    justify-content: flex-end;
+    position: sticky; 
+    top: 0;
+}
+
+nav div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: auto;
+    margin-left:5%;
+    white-space: nowrap;
+}
+
+a {
+    padding: 2% 2% 2% 2%;
+    /* only one line */
+    white-space: nowrap;
+    color: white;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+a:hover {
+    background-color: White;
+    color: black;
+    padding: 2% 4% 2% 4%;
+    animation: ease-in;
+}
+
+.referenzen {
+    background-color: white;
+    color: black;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100vw;
+    height: fit-content;
+    margin: 0;
+}
+
+.bildDiv {
+    box-sizing: border-box;
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
+    margin: 3%;
+    margin-top: 0;
+}
+
+.bilderContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-shrink: 0;
+    width:100%;
+    flex-wrap: wrap;
+}
+
+.img {
+    display: flex;
+    flex-shrink: 0;
+    width: 20%;
+    height: 20%;
+    margin: 2%;
+    box-shadow: 5px 5px 3px 3px rgba(0, 0, 0, 0.259);
+}
+
+.img2 {
+    width: 50%;
+    height: 50%;
+    margin: 2%;
+    box-shadow: 5px 5px 3px 3px rgba(0, 0, 0, 0.259);
+}
+
+.bildDiv h1 {
+    box-sizing: border-box;
+    background-color: gainsboro;
+    width: 100%;
+    padding: 1% 2% 1% 2%;
+    margin-top: 0;
+}
+
+.kategorien h3 {
+    padding: 1rem;
+}
+
+.reflektoren {
+    width: 40%;
+    height: 40%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .bilderContainer {
+        width: 100%;
+    }   
+
+    .img {
+        width: 40%;
+        height: 40%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .img {
+        width: 70%;
+        height: 70%;
+    }
+   
+    .bilderContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img2 {
+        width: 90%;
+        height: 100%;
+    }
+}

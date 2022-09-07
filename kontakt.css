@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    font-family: 'Outfit', sans-serif;
+}
+
+section.map {
+    display: flex;
+    justify-content: center;   
+    height: 50%;
+    margin: 0;
+}
+
+iframe {
+    width: 100%;
+    height: 50vh;
+}
+
+.whatsAppLink {
+    color: white;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    text-decoration: underline;
+    background-color: black;
+    width: 100%;
+}
+
+.whatsAppLink:hover {
+    border: 1px dotted black;
+}
+
+.whatsAppLink img {
+    width: 7%;
+    height: 7%;
+    margin-right: 10px;
+}
+
+section {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.divKontakt {
+    box-sizing: border-box;
+    width: 80vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.formTitle {
+    box-sizing: border-box;
+    font-weight: bolder;
+    font-size: xx-large;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.kontakt {
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+}
+
+input, textarea, button {
+    font-size: medium;
+    font-weight: bold;
+    background-color: gainsboro;
+    border: none;
+}
+
+form {
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    width: 80vw;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.basicDataInput {
+    width: 50%;
+    height: fit-content;
+}
+
+.name, .email, .nummer {
+    display: flex;
+    width: 80%;
+    margin: 6% 1% 6% 6%;
+    padding: 4%;
+}
+
+.textareaContainer {
+    width: 50%;
+    display: flex;
+}
+
+textarea {
+    resize: none;
+    margin: 6% 6% 6% 1%;
+    padding: 4%;
+    width: 100%;
+}
+
+.buttonContainer {
+    width: 100%;
+    display: flex;
+}
+
+button {
+    width: 100%;
+    padding: 2.5%;
+    margin: 0 3% 0 3%;
+    border-radius: 0;
+    border: none;
+    background-color: black;
+    color: white; 
+    border: 2px solid black;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+@media only screen and (max-width: 750px) {
+
+    .divKontakt {
+        align-items: flex-start;
+        width: 100vw;
+    }
+
+    form {
+        width: 100vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div .inputContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    div .basicDataInput {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .name, .email, .nummer {
+        width: 100%;
+        padding: 3%;
+        margin: 3%;
+        margin-bottom: 0;
+    }
+
+    .textareaContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    textarea {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 15%;
+        margin: 3%;
+    }
+
+    .buttonContainer {
+        width: 100vw;
+    }
+
+    button {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .whatsAppLink {
+        font-size: large;
+        margin-top: 10%;
+    }
+
+    .whatsAppLink {
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .whatsAppLink {
+        font-size: large;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    
+    button {
+        font-size: x-large;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    button {
+        font-size: large;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .divKontakt {
+        box-sizing: content-box;
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    h1.formTitle {
+        font-size: x-large;
+    }   
+
+    .whatsAppLink {
+        font-size: small;
+    }
+}

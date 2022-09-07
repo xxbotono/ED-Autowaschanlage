@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+html {
+    overflow-x: hidden;
+    background-color: white;
+    color: black;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+nav {
+    background-color:black;
+    color: white;
+    display: flex; 
+    justify-content: flex-end;
+    position: sticky; 
+    top: 0;
+}
+
+.logo {
+    width: 20%;
+    height:20%;
+}
+
+.logo-div h1 {
+    display: flex;
+    align-items: center;
+}
+
+.second-logo {
+    width: 10%;
+    height: 10%;
+    margin: 0 2.5% 0 5%;
+}
+
+
+nav div {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 2%;
+    white-space: nowrap;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    padding: 1% 2% 1% 2%;
+    /* only one line */
+    white-space: nowrap;
+    color: white;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+a:hover {
+    background-color: White;
+    color: black;
+    padding: 1% 2.5% 1% 2.5%;
+    animation: ease-in;
+}
+
+section.home {
+    display: flex;
+    justify-content: center;
+}
+
+
+footer {
+    display: flex;
+    background-color:black;
+    color: white;
+    margin-top: auto;
+    width: 100%;
+}
+
+footer ul {
+    margin-left: 10%;
+}
+
+footer li {
+    list-style-type: none;
+    margin: 4% 0 4% 0;
+}
+
+footer li a {
+    font-weight:lighter;
+}
+
+footer div {
+    width: 45%;
+    margin-left: 2.5%;
+}
+
+footer div p {
+    font-weight: lighter;
+}
+
+@media only screen and (max-width: 950px) {
+    
+    nav {
+        flex-direction: column;
+        position: static;
+    }
+
+    .logo {
+        width: 15%;
+        height: 15%;
+    }
+
+    .second-logo {
+        width: 7%;
+        height: 7%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .logo {
+        width: 15%;
+        height: 15%;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer ul {
+        margin-left: 0;
+        width: 80%;
+        padding-left:0;
+    }
+
+    footer div {
+        margin-left: 0;
+        width:80%;
+    }
+
+    footer #a {
+        padding: 0;
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kontakt</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="kontakt.css">
+        <link rel="stylesheet" href="allpages.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+                <div class="logo-div" >
+                    <h1><img class="logo" src="mysvg/400PngdpiLogoCropped.png"><img class="second-logo" src="/mysvg/ED.@2x.png">Autoaufbereitung</h1>
+                </div>
+                <a href="index.html" class="home">Home</a>
+                <a href="pL.html" class="pL">Produkte & Leistungen</a>
+                <a href="referenzen.html" class="referenzen">Referenzen</a>
+                <a id="a" href="tankstelle.html" class="tankstelle">Tankstelle</a>
+                <a class="kontakt">Kontakt</a>
+        </nav>
+        <section class="map" >
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d464.6154478398626!2d8.197146725872406!3d48.79598152080283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47971f536cb94fe5%3A0xa7d4fe47f082e42c!2sED%20Freie%20Tankstelle!5e0!3m2!1sen!2sde!4v1661108366181!5m2!1sen!2sde" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="whatsApp">
+            <a class="whatsAppLink" href="https://wa.me/491731607989" target="_blank"><img src="images/479px-WhatsApp.svg.webp">Chatten Sie mit uns auf WhatsApp!</a>
+        </section>
+        <section class="sectionKontakt">
+            <div class="divKontakt">
+                <form action="kontakt.php" method="POST">   
+                <h1 class="formTitle" >Kontaktieren Sie Uns</h1>                         
+                    <div class="inputContainer">
+                        <div class="basicDataInput">
+                            <div class="input">
+                                <input class="name" type="text" name="name" required placeholder="Name">
+                            </div>
+                            <div class="input">
+                                <input class="email" type="text" name="email" required placeholder="Email">
+                            </div>
+                            <div class="input">
+                                <input class="nummer" type="text" name="nummer" required placeholder="Telefonnummer"> 
+                            </div>
+                        </div>
+                        <div class="textareaContainer">
+                            <textarea class="nachricht" type="text" name="nachricht" placeholder="Bitte geben sie ihre Nachricht ein"></textarea>
+                        </div>
+                    </div>
+                    <div class="buttonContainer">
+                        <button type="submit" name="submit">Abschicken</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </body>
+    <footer>
+        <div>
+            <h2>Über ED Autowaschanlage</h2>
+            <p>
+                Hier bei ED Autoaufbereitung können Sie ihren Wagen, aber auch ihr Boot aufbereiten. Unser Gebiet ist Baden-Baden, Bühl, Rastatt und die Umgebung. Wir hier bei ED Autoaufbereitung kümmern uns um ihr Fahrzeug sorgfältig und mit liebe um ihr Fahrzeug.
+            </p>
+        </div>
+        <ul>
+            <li><a href="tel:+1731607989"><b>Telefon:</b>&nbsp1731607989</a></li>
+            <li><a href="mailto:szabadkaboco@gmail.com"><b>Email:</b>&nbspszabadkaboco@gmail.com</a></li>
+            <li><a href="" target="_blank"><b>Instagram</b></a></li>
+            <li><a id="a" href="impressum.html" target="_blank">Impressum</a></li>
+            <li><a id="a" href="datenschutz.html" target="_blank">Datenschutz</a></li>
+        </ul>
+    </footer>
+</html>

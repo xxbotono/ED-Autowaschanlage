@@ -1,0 +1,14 @@
+.logo-div {
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.logo-div h1 {
+    text-align: center;
+
+}
+
+.impressum {
+    margin: 2.5%;
+}

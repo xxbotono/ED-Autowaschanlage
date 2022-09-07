@@ -1,0 +1,60 @@
+html {
+    background-color: white;
+    color: black;
+    font-family: 'Merriweather', serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* This Made the Border Dissapear!!! WoW*/
+    margin: 0 auto;
+}
+
+nav {
+    background-color:black;
+    color: white;
+    display: flex; 
+    justify-content: flex-end;
+    position: sticky; 
+    top: 0;
+}
+
+nav div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: auto;
+    margin-left:5%;
+    white-space: nowrap;
+}
+
+a {
+    padding: 2% 2% 2% 2%;
+    /* only one line */
+    white-space: nowrap;
+    color: white;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+a:hover {
+    background-color: White;
+    color: black;
+    padding: 2% 4% 2% 4%;
+    animation: ease-in;
+}
+
+.überUns {
+    background-color: white;
+    color: black;
+}
+
+@media only screen and (max-width: 950px) {
+    nav {
+        flex-direction: column;
+        position: static;
+    }
+
+}
